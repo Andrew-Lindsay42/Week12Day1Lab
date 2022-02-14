@@ -29,4 +29,9 @@ public class CreditCardTest {
     @Test public void canScanCard() {
         assertEquals("Payment Successful", creditCard.scan());
     }
+
+    @Test
+    public void canPay(){
+        assertEquals("Paid with card", creditCard.pay());
+    }
 }

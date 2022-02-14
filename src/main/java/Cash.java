@@ -1,4 +1,4 @@
-public class Cash implements IItem{
+public class Cash implements IItem, IPay{
 
     private int value;
     private String currencyType;

@@ -1,4 +1,4 @@
-public abstract class Card implements IItem{
+public abstract class Card implements IItem, IPay{
     private String cardNumber;
     private String expiryDate;
     private int securityNumber;

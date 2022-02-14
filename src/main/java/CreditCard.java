@@ -1,4 +1,4 @@
-public class CreditCard extends Card implements IScan{
+public class CreditCard extends Card implements IScan,IPay{
 
 
     public CreditCard(String cardNumber, String expiryDate, int securityNumber) {
@@ -7,5 +7,9 @@ public class CreditCard extends Card implements IScan{
 
     public String scan() {
         return "Payment Successful";
+    }
+
+    public String pay(){
+        return "Paid with card";
     }
 }
